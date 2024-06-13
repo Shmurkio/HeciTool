@@ -6,7 +6,7 @@
     VERSION_STRING = 1.0
     ENTRY_POINT = UefiMain
 
-[Sources.X64]
+[Sources]
     Std.cpp
     Main.cpp
     HeciTool.cpp
