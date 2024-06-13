@@ -1,0 +1,25 @@
+[Defines]
+    INF_VERSION = 0x00010005
+    BASE_NAME = HeciTool
+    FILE_GUID = 8E7F9C7F-F926-48A0-8642-0A882F408CC6
+    MODULE_TYPE = UEFI_APPLICATION
+    VERSION_STRING = 1.0
+    ENTRY_POINT = UefiMain
+
+[Sources.X64]
+    Std.cpp
+    Main.cpp
+    HeciTool.cpp
+    Std.h
+    HeciTool.h
+
+[Packages]
+    MdePkg/MdePkg.dec
+
+[LibraryClasses]
+    UefiLib
+    UefiBootServicesTableLib
+    UefiApplicationEntryPoint
+
+[Protocols]
+    gEfiSimpleTextInputExProtocolGuid
